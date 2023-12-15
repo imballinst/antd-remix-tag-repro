@@ -11,17 +11,16 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-      <h1>Welcome to Remix Default Tag</h1>
+      <h1>Welcome to Remix All Tag Colors</h1>
       <ul>
         <li>
-          <a href="/default-tag">
-            Go to other page with only default tag
-          </a>
+          <a href="/default-tag">Go to other page with only default tag</a>
         </li>
       </ul>
 
       <div>
-        <Tag>Hello</Tag>
+        <Tag color="success">Hello</Tag>
+        <Tag color="warning">Hello</Tag>
       </div>
     </div>
   );
