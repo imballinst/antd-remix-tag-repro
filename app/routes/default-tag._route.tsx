@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import { Link } from "@remix-run/react";
 import { Badge, Tag } from "antd";
 import { useEffect, useState } from "react";
 
@@ -23,7 +24,7 @@ export default function DefaultTAg() {
       <h1>Welcome to Remix</h1>
       <ul>
         <li>
-          <a href="/">Go to other page with all kind of tag colors</a>
+          <Link to="/">Go to other page with all kind of tag colors</Link>
         </li>
       </ul>
 

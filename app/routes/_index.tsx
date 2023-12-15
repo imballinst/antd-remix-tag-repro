@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import { Link } from "@remix-run/react";
 import { Tag } from "antd";
 
 export const meta: MetaFunction = () => {
@@ -14,7 +15,7 @@ export default function Index() {
       <h1>Welcome to Remix All Tag Colors</h1>
       <ul>
         <li>
-          <a href="/default-tag">Go to other page with only default tag</a>
+          <Link to="/default-tag">Go to other page with only default tag</Link>
         </li>
       </ul>
 
