@@ -25,7 +25,7 @@ export default function DefaultTag() {
       </div>
 
       <div>
-        <Badge text="Default" />
+        <Badge status="default" text="Default" />
       </div>
     </div>
   );
