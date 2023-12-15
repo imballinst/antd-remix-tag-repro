@@ -10,15 +10,7 @@ export const meta: MetaFunction = () => {
   ];
 };
 
-export default function DefaultTAg() {
-  const [isAddedSomething, setIsAddedSomething] = useState(false);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setIsAddedSomething(true);
-    }, 1000);
-  }, []);
-
+export default function DefaultTag() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
       <h1>Welcome to Remix</h1>
@@ -29,10 +21,12 @@ export default function DefaultTAg() {
       </ul>
 
       <div>
-        <Tag>Hello</Tag>
+        <Tag>Default</Tag>
       </div>
 
-      <div>{isAddedSomething && <Badge status="success" text="Success" />}</div>
+      <div>
+        <Badge text="Default" />
+      </div>
     </div>
   );
 }

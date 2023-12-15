@@ -1,6 +1,6 @@
 import type { MetaFunction } from "@remix-run/node";
 import { Link } from "@remix-run/react";
-import { Tag } from "antd";
+import { Badge, Tag } from "antd";
 
 export const meta: MetaFunction = () => {
   return [
@@ -20,8 +20,13 @@ export default function Index() {
       </ul>
 
       <div>
-        <Tag color="success">Hello</Tag>
-        <Tag color="warning">Hello</Tag>
+        <Tag color="success">Success</Tag>
+        <Tag color="warning">Warning</Tag>
+      </div>
+
+      <div>
+        <Badge status="success" text="Success" />
+        <Badge status="warning" text="Warning" />
       </div>
     </div>
   );
